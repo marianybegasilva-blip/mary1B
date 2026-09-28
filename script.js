@@ -16,3 +16,4 @@
     }
   })
 
+const btnTemaEscuro = document.querySele(".btn-tema-escuro");
