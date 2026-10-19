@@ -1,19 +1,35 @@
- const botao = document.querySelector("button");
-
-    botes.forEach(function (botao) {
-           let curtiu = false; 
-    botao.addEventListener("click", botaoClicado);
-    function botaoClicado() {
-        console.log("fui clicado");
-        let texto = botao.querySelector("span");
-        if (curtiu === false) {
-        texto.textContent++;
+ const botao = document.querySelectorAll("button");  
+      botoes.forEach(function(botao) {
+         let curtiu = false;
+      botao.addEventListner("click", botaoClicado);
+      function botaoClicao() {
+         console.log("fui clicado");
+         let texto = botao.querySelctor("span");
+        if(curtiu === false) {
+         texto.textContent++;
         curtiu = true;
         } else{
-        text.textContent--;
-        curtiu = false;
+          texto.textContent--;
+          curtiu = false;
         }
-    }
-  })
+      }
+      })
+const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
+btnTemaEscuro.addEventListener("click", mudaTema);
 
-const btnTemaEscuro = document.querySele(".btn-tema-escuro");
+function mudaTema(){
+      const corpoPagina = document.body;
+      if (corpoPagina.classList.contains("tema-escuro")) {
+            corpoPagina.classList.remove("tema-escuro");
+      } else{
+            corpoPagina.classList.add("tema-escuro");
+      }
+}
+
+function mudaTema(){
+const corpoPagina = documement.body;
+if (corpoPagina.classList.remove("tema-escuro");
+} else {
+      corpoPagina.classList.add("tema-escuro");
+}
+}
